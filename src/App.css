@@ -19,8 +19,35 @@
 
 .body {
   font-family: "Onest", sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   /* font-weight: <weight>; */
   font-style: normal;
 }
+
+
+.first_div{
+  margin-top: 50px;
+}
+
+.divider{
+  width: 80%;
+  margin: 40px auto;
+}
+
+.second_div{
+  width: 80%;
+  margin: 20px auto;
+}
+
+.third_div{
+  width: 80%;
+  margin: 0px auto;
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
 

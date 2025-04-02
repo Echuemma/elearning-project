@@ -19,16 +19,17 @@
   
   .button {
     padding: 12px 24px;
-    border-radius: 50px;
+    border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     border: none;
     font-size: 1rem;
+   
   }
   
   .primary-button {
-    background-color: #2e8b57;
+    background-color: #1B5C12;
     color: white;
   }
   

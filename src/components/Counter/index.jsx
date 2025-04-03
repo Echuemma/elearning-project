@@ -60,7 +60,7 @@ export default function StatsCounter() {
       const progress = frame / totalFrames;
       const easedProgress = easeOutQuad(progress);
       
-      setCounters(stats.map((stat, index) => {
+      setCounters(stats.map((stat) => {
         return Math.min(Math.round(easedProgress * stat.target), stat.target);
       }));
       

@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import Button from '../../components/Button';
 import { HiMenu, HiX } from 'react-icons/hi';
 import AOS from 'aos';
+import "./nav.css"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  // Initialize AOS
+
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -19,10 +20,9 @@ const Navbar = () => {
   return (
     <nav className="nav bg-white border-b border-gray-200 px-6 py-4">
       <div className="flex items-center justify-between">
-        {/* Logo */}
+
         <div className="font-medium text-green-800">Logo</div>
         
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
   <a href="/" className="!text-[#1B5C12] font-medium border-b-2 border-green-800">Home</a>
   <a href="/dashboard" className="text-gray-500 hover:text-[#1B5C12]">Dashboard</a>
@@ -31,8 +31,7 @@ const Navbar = () => {
 </div>
 
 
-        {/* Desktop Buttons */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className=" nav_btn hidden md:flex items-center space-x-4">
           
           <Link to="./login">
           <Button text="Login" />
@@ -44,7 +43,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsOpen(!isOpen)} 
           className="md:hidden focus:outline-none"
@@ -57,7 +55,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="mt-4 md:hidden overflow-hidden">
           <div className="flex flex-col items-start space-y-4 pl-2">

@@ -1,7 +1,7 @@
 export {default as HomePage } from "./HomePage"
 export {default as RegistrationPage } from "./RegistrationPage"
 export {default as LoginPage } from "./LoginPage"
-export {default as DashboardPage } from "./DashboardPage"
+export {default as DashboardLayout } from "./DashboardLayout"
 export {default as StudentProfile } from "./StudentProfile"
 export {default as ForgotPasswordPage } from "./ForgotPasswordPage"
 // export {default as NotificationPage } from "./NotificationPage"

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import Button from '../../components/Button';
 import { HiMenu, HiX } from 'react-icons/hi';
 import AOS from 'aos';
@@ -16,23 +17,31 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-white border-b border-gray-200 px-6 py-4">
+    <nav className="nav bg-white border-b border-gray-200 px-6 py-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="font-medium text-green-800">Logo</div>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="/" className="text-green-800 font-medium border-b-2 border-green-800">Home</a>
-          <a href="/dashboard" className="text-gray-500 hover:text-gray-700">Dashboard</a>
-          <a href="/courses" className="text-gray-500 hover:text-gray-700">Courses</a>
-          <a href="/teach" className="text-gray-500 hover:text-gray-700">Teach On Maverick</a>
-        </div>
+  <a href="/" className="!text-[#1B5C12] font-medium border-b-2 border-green-800">Home</a>
+  <a href="/dashboard" className="text-gray-500 hover:text-[#1B5C12]">Dashboard</a>
+  <a href="/courses" className="text-gray-500 hover:text-[#1B5C12]">Courses</a>
+  <a href="/teach" className="text-gray-500 hover:text-[#1B5C12]">Teach On Maverick</a>
+</div>
+
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center space-x-4">
+          
+          <Link to="./login">
           <Button text="Login" />
+          </Link>
+          
+          
+          <Link to="./register">
           <Button text="Sign up" />
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}

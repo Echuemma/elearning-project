@@ -80,7 +80,7 @@ const OnlineCoursesSection = () => {
               
               <div className="flex items-center justify-between mt-auto">
                 <span className="text-gray-700 font-medium">{course.duration}</span>
-                <span className="span bg-[#1B5C12] text-white w-24 text-center inline-block px-3 py-1 rounded-md font-medium">Free</span>
+                <span className="span bg-white text-[#1B5C12] border-1 border-[#1B5C12] w-24 text-center inline-block px-3 py-1 rounded-md font-medium transition-all duration-300 hover:bg-[#1B5C12] hover:text-white">Free</span>
               </div>
             </div>
           </div>

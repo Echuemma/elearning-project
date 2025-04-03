@@ -50,7 +50,7 @@ const OnlineCoursesSection = () => {
   return (
     <div className="onlinecourse mx-auto p-6 bg-white rounded-lg border-gray-200">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-green-700 mb-2" data-aos="fade-down"
+        <h2 className="text-3xl font-bold text-[#1B5C12] mb-2" data-aos="fade-down"
         data-aos-delay="200">Popular Free Online Courses</h2>
         <p className="paragraph text-gray-600" data-aos="fade-up">
           Our digital platform presents you the following free courses to enable you to get the right education.
@@ -67,7 +67,7 @@ const OnlineCoursesSection = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="absolute top-4 left-4">
-                <span className="span bg-green-600 text-white px-3 py-1 text-sm font-medium rounded-md">
+                <span className="span bg-[#1B5C12] text-white px-3 py-1 text-sm font-medium rounded-md">
                   {course.level}
                 </span>
               </div>
@@ -75,12 +75,12 @@ const OnlineCoursesSection = () => {
             
             <div className="p-4">
               <div className="type text-xs text-gray-500 mb-1">Course | {course.type}</div>
-              <h3 className="text-xl font-bold text-green-800 mb-2">{course.title}</h3>
+              <h3 className="text-xl font-bold text-[#1B5C12] mb-2">{course.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{course.description}</p>
               
               <div className="flex items-center justify-between mt-auto">
                 <span className="text-gray-700 font-medium">{course.duration}</span>
-                <span className="span bg-green-100 text-green-800 px-3 py-1 rounded-md font-medium">Free</span>
+                <span className="span bg-[#1B5C12] text-white w-24 text-center inline-block px-3 py-1 rounded-md font-medium">Free</span>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ const OnlineCoursesSection = () => {
       </div>
 
       <div className="text-center mt-8">
-        <button className="btn bg-green-800 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-md transition-colors" data-aos="fade-up">
+        <button className="btn bg-[#1B5C12] hover:bg-[#246e44] text-white font-medium py-2 px-6 rounded-md transition-colors" data-aos="fade-up">
           View Other Free Courses
         </button>
       </div>

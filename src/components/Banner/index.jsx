@@ -19,7 +19,7 @@ const HealthEducationBanner = () => {
         className="text-3xl font-bold mb-2"
         data-aos="fade-up"
       >
-        Get Health <span className="text-green-600">Education</span> And Stay Proficient!
+        Get Health <span className="text-[#1B5C12]">Education</span> And Stay Proficient!
       </h1>
       <p 
         className="text-gray-700 mb-6"

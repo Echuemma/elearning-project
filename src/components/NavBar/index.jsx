@@ -23,11 +23,12 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="/" className="text-green-800 font-medium border-b-2 border-green-800">Home</a>
-          <a href="/dashboard" className="text-gray-500 hover:text-gray-700">Dashboard</a>
-          <a href="/courses" className="text-gray-500 hover:text-gray-700">Courses</a>
-          <a href="/teach" className="text-gray-500 hover:text-gray-700">Teach On Maverick</a>
-        </div>
+  <a href="/" className="!text-[#1B5C12] font-medium border-b-2 border-green-800">Home</a>
+  <a href="/dashboard" className="text-gray-500 hover:text-[#1B5C12]">Dashboard</a>
+  <a href="/courses" className="text-gray-500 hover:text-[#1B5C12]">Courses</a>
+  <a href="/teach" className="text-gray-500 hover:text-[#1B5C12]">Teach On Maverick</a>
+</div>
+
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center space-x-4">

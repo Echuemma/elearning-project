@@ -20,7 +20,8 @@
 
 a {
   font-weight: 500;
-  color: rgb(20, 19, 19);
+  color: rgba(128, 128, 128, 1)  /* Standard grey */
+  ;
   text-decoration: inherit;
 }
 a:hover {
@@ -68,7 +69,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #1B5C12;
   }
   /* button {
     background-color: #f9f9f9;

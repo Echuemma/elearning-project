@@ -7,34 +7,37 @@ import health5 from "../../assets/images/health5.jpg";
 
 const MedicalMarquee = () => {
   const [position, setPosition] = useState(0);
-  
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setPosition(prevPosition => (prevPosition - 1) % 1200);
     }, 30);
-    
+
     return () => clearInterval(intervalId);
   }, []);
 
-
+  // Define images with their specific widths and heights
   const images = [
-    { id: 1, src: health1, alt: "Doctor with mask and stethoscope" },
-    { id: 2, src: health2, alt: "Patient undergoing medical scan" },
-    { id: 3, src: health3, alt: "Smiling nurse in blue scrubs" },
-    { id: 4, src: health4, alt: "Doctor with glasses and stethoscope" },
-    { id: 5, src: health5, alt: "Medical laboratory equipment" }
+    { id: 1, src: health1, alt: "Doctor with mask and stethoscope", width: 290, height: 355 },
+    { id: 2, src: health2, alt: "Patient undergoing medical scan", width: 270, height: 258 },
+    { id: 3, src: health3, alt: "Smiling nurse in blue scrubs", width: 300, height: 375 },
+    { id: 4, src: health4, alt: "Doctor with glasses and stethoscope", width: 270, height: 311 },
+    { id: 5, src: health5, alt: "Medical laboratory equipment", width: 270, height: 258 }
   ];
 
   return (
     <div className="w-full overflow-hidden bg-blue-50 p-6 rounded-lg shadow-md">
-      
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-[400px] overflow-hidden"> {/* Increased height for better spacing */}
         <div 
           className="absolute flex gap-4 transition-transform duration-2500 ease-linear"
           style={{ transform: `translateX(${position}px)` }}
         >
           {images.map(img => (
-            <div key={img.id} className="flex-shrink-0 w-64 h-64 bg-white rounded-lg overflow-hidden shadow-lg">
+            <div 
+              key={img.id} 
+              className="flex-shrink-0 bg-white rounded-lg overflow-hidden shadow-lg"
+              style={{ width: `${img.width}px`, height: `${img.height}px` }} // Apply custom sizes
+            >
               <img 
                 src={img.src} 
                 alt={img.alt}
@@ -43,8 +46,13 @@ const MedicalMarquee = () => {
             </div>
           ))}
 
+          {/* Duplicate images to create a smooth infinite loop effect */}
           {images.map(img => (
-            <div key={`dup-${img.id}`} className="flex-shrink-0 w-64 h-64 bg-white rounded-lg overflow-hidden shadow-lg">
+            <div 
+              key={`dup-${img.id}`} 
+              className="flex-shrink-0 bg-white rounded-lg overflow-hidden shadow-lg"
+              style={{ width: `${img.width}px`, height: `${img.height}px` }}
+            >
               <img 
                 src={img.src} 
                 alt={img.alt}
@@ -54,7 +62,6 @@ const MedicalMarquee = () => {
           ))}
         </div>
       </div>
-      
     </div>
   );
 };

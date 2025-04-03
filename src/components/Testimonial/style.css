@@ -106,7 +106,7 @@ body {
   }
   
   .testimonials__block--active {
-    mask: none;
+    mask-image: none;
     -webkit-mask-image: none;
     flex: 1;
     transform: scale(1);

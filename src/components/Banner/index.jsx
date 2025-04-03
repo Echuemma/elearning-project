@@ -19,7 +19,7 @@ const HealthEducationBanner = () => {
         className="text-3xl font-bold mb-2"
         data-aos="fade-up"
       >
-        Get Health <span className="text-green-600">Education</span> And Stay Proficient!
+        Get Health <span className="text-[#1B5C12]">Education</span> And Stay Proficient!
       </h1>
       <p 
         className="text-gray-700 mb-6"
@@ -29,13 +29,17 @@ const HealthEducationBanner = () => {
         Maverick Online learning platform for all your health needs
       </p>
       <div className="button-container" data-aos="fade-up" data-aos-delay="400">
-        <button className="button secondary-button">
-          <svg className="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polygon points="10 8 16 12 10 16 10 8"></polygon>
-          </svg>
-          Watch Video
-        </button>
+  <button
+    className="button secondary-button border-2 flex items-center gap-2 px-4 py-2 rounded-md"
+    style={{ borderColor: '#1B5C12', color: '#1B5C12' }}
+  >
+    <svg className="play-icon w-6 h-6" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="10" fill="#1B5C12" />
+      <polygon points="10 8 16 12 10 16 10 8" fill="white" />
+    </svg>
+    Watch Video
+  </button>
+
         <button className="button primary-button">
           Get Started
         </button>

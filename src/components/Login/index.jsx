@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import FormInput from '../../components/FormInput';
 import { Eye, EyeOff } from 'lucide-react';
 import './LoginForm.css';
 
 const LoginForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -15,24 +17,25 @@ const LoginForm = () => {
   });
   
   const [showPassword, setShowPassword] = useState(false);
+
+  const mockUser = {
+    email: 'test@example.com',
+    password: 'password123'
+  };
   
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
   
-  const validatePassword = (password) => {
-    return password.length >= 6;
-  };
-  
+  const validatePassword = (password) => password.length >= 6;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
       [name]: value
     }));
-    
-    // Clear errors when typing
     setErrors(prevState => ({
       ...prevState,
       [name]: ''
@@ -46,7 +49,6 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Validate form
     let valid = true;
     const newErrors = { email: '', password: '' };
     
@@ -69,8 +71,11 @@ const LoginForm = () => {
     setErrors(newErrors);
     
     if (valid) {
-      console.log("Login attempt:", formData);
-      // Proceed with login logic
+      if (formData.email === mockUser.email && formData.password === mockUser.password) {
+        navigate('/dashboard');
+      } else {
+        alert('Invalid email or password');
+      }
     }
   };
 
@@ -100,7 +105,6 @@ const LoginForm = () => {
         </div>
         
         <div className="input-container">
-          {/* Custom password input implementation instead of using FormInput component */}
           <div className="custom-input-wrapper">
             <input
               type={showPassword ? "text" : "password"}

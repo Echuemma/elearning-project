@@ -18,7 +18,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="nav bg-white border-b border-gray-200 px-6 py-4">
+    <div className='px-5 bg-white'>
+      <nav className="nav bg-white border-b border-gray-200 py-4 px-5">
       <div className="flex items-center justify-between">
 
         <div className="font-medium text-green-800">Logo</div>
@@ -99,6 +100,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    </div>
   );
 };
 

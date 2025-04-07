@@ -38,7 +38,7 @@ const Navbar = () => {
           </Link>
           
           
-          <Link to="./register">
+          <Link to="./signup">
           <Button text="Sign up" />
           </Link>
         </div>

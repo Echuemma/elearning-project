@@ -32,7 +32,6 @@
     margin-bottom: 24px;
 }
 
-/* New styles for validation and password toggle */
 .input-container {
     margin-bottom: 20px;
     position: relative;
@@ -46,7 +45,7 @@
 
 .custom-input {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;

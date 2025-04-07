@@ -9,15 +9,11 @@
 // import Typography from '@mui/material/Typography';
 // import Divider from '@mui/material/Divider';
 // import IconButton from '@mui/material/IconButton';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-// import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+// import { Menu, ChevronLeft, ChevronRight, Inbox, Mail } from 'lucide-react';
 // import ListItem from '@mui/material/ListItem';
 // import ListItemButton from '@mui/material/ListItemButton';
 // import ListItemIcon from '@mui/material/ListItemIcon';
 // import ListItemText from '@mui/material/ListItemText';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import MailIcon from '@mui/icons-material/Mail';
 
 // const drawerWidth = 240;
 
@@ -105,7 +101,7 @@
 //               open && { display: 'none' },
 //             ]}
 //           >
-//             <MenuIcon />
+//             <Menu size={24} />
 //           </IconButton>
 //           <Typography variant="h6" noWrap component="div">
 //             Persistent drawer
@@ -127,7 +123,7 @@
 //       >
 //         <DrawerHeader>
 //           <IconButton onClick={handleDrawerClose}>
-//             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+//             {theme.direction === 'ltr' ? <ChevronLeft size={24} /> : <ChevronRight size={24} />}
 //           </IconButton>
 //         </DrawerHeader>
 //         <Divider />
@@ -136,7 +132,7 @@
 //             <ListItem key={text} disablePadding>
 //               <ListItemButton>
 //                 <ListItemIcon>
-//                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+//                   {index % 2 === 0 ? <Inbox size={24} /> : <Mail size={24} />}
 //                 </ListItemIcon>
 //                 <ListItemText primary={text} />
 //               </ListItemButton>
@@ -149,7 +145,7 @@
 //             <ListItem key={text} disablePadding>
 //               <ListItemButton>
 //                 <ListItemIcon>
-//                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+//                   {index % 2 === 0 ? <Inbox size={24} /> : <Mail size={24} />}
 //                 </ListItemIcon>
 //                 <ListItemText primary={text} />
 //               </ListItemButton>

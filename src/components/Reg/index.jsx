@@ -109,6 +109,12 @@ const AccountRegistrationForm = () => {
               value={formData.nationality}
               onChange={handleChange}
             />
+
+          <div className="form-actions">
+          <button type="submit" className="login-button">
+            CREATE MY  ACCOUNT
+          </button>
+        </div>
           </div>
         )}
         

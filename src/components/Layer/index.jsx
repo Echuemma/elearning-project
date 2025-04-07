@@ -13,7 +13,7 @@ const Layer = () => {
       });
     }, []);
   return (
-    <div className="course bg-green-800 rounded-lg w-[90%] mx-auto my-[50px] relative pb-[100px]">
+    <div className="course bg-[#1B5C12] rounded-lg w-[90%] mx-auto my-[50px] relative pb-[100px]">
       {/* Dark green curved shape in background */}
       {/* <div className=" container absolute right-0 top-0 w-3/4 h-full rounded-md  bg-green-900 rounded-l-full rounded-r"></div> */}
       

@@ -78,11 +78,11 @@ export default function StatsCounter() {
   return (
     <section
       ref={sectionRef}
-      className="w-full h-[480px] flex justify-center items-center bg-green-800 text-white"
+      className="w-full h-[480px] flex justify-center items-center bg-[#1B5C12] text-white"
       style={{ gap: "150px" }}
     >
       <div
-        className="relative flex flex-col items-center bg-green-800 text-center text-white rounded-lg"
+        className="relative flex flex-col items-center bg-[#1B5C12] text-center text-white rounded-lg"
         style={{
           width: "90%",
           height: "366px",
@@ -104,7 +104,8 @@ export default function StatsCounter() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-green-700 flex flex-col justify-center items-center text-center shadow-md"
+              className="bg-[rgba(190,230,252,0.3)] flex flex-col justify-center items-center text-center shadow-md"
+
               data-aos="zoom-in"
               data-aos-delay={100 * index}
               style={{

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import FormInput from '../../components/FormInput';
 import './style.css';
+import Navbar from '../../components/NavBar';
+
 
 const AccountRegistrationForm = () => {
   const [showMoreDetails, setShowMoreDetails] = useState(false);
@@ -29,6 +31,9 @@ const AccountRegistrationForm = () => {
   };
 
   return (
+    <>
+    <Navbar />
+    
     <div className="registration-form">
       <h1 className="form-heading">New account</h1>
       
@@ -111,8 +116,8 @@ const AccountRegistrationForm = () => {
             />
 
           <div className="form-actions">
-          <button type="submit" className="login-button">
-            CREATE MY  ACCOUNT
+          <button type="submit" className="submit-button">
+            CREATE ACCOUNT
           </button>
         </div>
           </div>
@@ -128,6 +133,7 @@ const AccountRegistrationForm = () => {
         </div> */}
       </form>
     </div>
+    </>
   );
 };
 

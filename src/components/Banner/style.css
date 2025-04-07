@@ -15,6 +15,7 @@
     gap: 16px;
     margin-bottom: 64px;
     flex-wrap: wrap;
+    gap: 30px;
   }
   
   .button {
@@ -25,25 +26,32 @@
     transition: all 0.3s ease;
     border: none;
     font-size: 1rem;
-   
+    min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   }
   
+  .button:hover {
+    transform: translateY(-6px);
+  }
+
   .primary-button {
     background-color: #1B5C12;
     color: white;
   }
   
-  .primary-button:hover {
-    background-color: #246e44;
-  }
+
   
   .secondary-button {
     background-color: white;
     color: #333;
     border: 1px solid #ddd;
-    display: flex;
+    padding: 0;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
   
   .secondary-button:hover {
@@ -53,6 +61,6 @@
   .play-icon {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
+    margin-right: 0px;
   }
   

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Paper, Container, Button, Grid, Box, Table, TableBody, TableCell, TableHead, TableRow, Card, CardMedia, CardContent, CardActions, Chip } from '@mui/material';
+import { Typography, Paper, Container, Button, Box, Table, TableBody, TableCell, TableHead, TableRow, Card, CardMedia, CardContent, CardActions, Chip } from '@mui/material';
 import SA from "../../assets/images/SA.jpeg";
 import tb from "../../assets/images/tb.jpeg";
 import malaria from "../../assets/images/malaria.jpeg";

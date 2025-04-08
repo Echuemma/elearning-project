@@ -3,7 +3,8 @@ import pro from "../../assets/images/health6.png";
 import group1 from "../../assets/images/Group.png";
 import group2 from "../../assets/images/group2.png";
 import rectangle from "../../assets/images/rectangle.svg";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 // import "./style.css"
@@ -35,28 +36,33 @@ const HealthEducationHero = () => {
         </div>
 
         <div className="md:w-1/2 lg:w-3/5 max-w-2xl">
-          <h2 className="text-3xl font-bold text-black">
+          <h2 className="text-3xl font-bold text-black" data-aos="fade-down"
+        data-aos-delay="200">
             Everything <span className="text-green-600">HEALTH</span> Education
           </h2>
 
-          <div className="text-gray-700 pt-30">
+          <div className="text-gray-700 pt-30" data-aos="fade-up"
+        data-aos-delay="200">
             This Platform is aimed at doing the following:
           </div>
-
+            <br />
          <div className="">
          <ul className="list-disc list-inside space-y-2 text-gray-700 leading-7 pt-8">
-            <li>
+            <li data-aos="fade-up"
+        data-aos-delay="200">
               To assess the effectiveness of a learning management platform in
               educating Nigerians on basic health issues, including HIV,
               Tuberculosis (TB), substance abuse, Polio, and Malaria.
             </li>
-
-            <li>
+            <br />
+            <li data-aos="fade-up"
+        data-aos-delay="200"> 
               To evaluate the engagement and usability of the platform for the
               target audience.
             </li>
-
-            <li>
+          <br />
+            <li data-aos="fade-up"
+        data-aos-delay="200">
               To provide actionable insights for improving the platform's
               content, design, and delivery to maximize learning outcomes. To
               provide updated & right information on the above mentioned health

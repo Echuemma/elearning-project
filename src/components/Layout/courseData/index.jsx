@@ -34,10 +34,10 @@ export const courseModules = {
     ],
     polio: [
       { id: 'module-1', name: 'Polio Virus and Disease' },
-      { id: 'module-2', name: 'Polio Transmission Patterns' },
-      { id: 'module-3', name: 'Polio Eradication Strategies' },
-      { id: 'module-4', name: 'Vaccination Campaigns and Surveillance' },
-      { id: 'module-5', name: 'Challenges in Polio Eradication' },
+      { id: 'module-2', name: 'Symptoms & Diagnosis' },
+      { id: 'module-3', name: 'Polio Prevention & Vaccination' },
+      { id: 'module-4', name: 'Treatment & Rehabilitation' },
+      { id: 'module-5', name: 'Advocacy & Community Action' },
       { id: 'module-6', name: 'Post-Eradication Considerations' }
     ]
   };

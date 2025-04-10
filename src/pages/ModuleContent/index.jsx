@@ -20,7 +20,7 @@ const ModuleContent = () => {
   const moduleContent = {
     malaria: {
       'module-1': {
-        title: 'Introduction & Overview - Malaria',
+        title: 'Understanding Malaria: Causes, Transmission, and Global Impact',
         content: `<p>
           Malaria is one of the most persistent and devastating infectious diseases in human history. It has influenced the outcomes of wars, hindered economic growth, and continues to place a heavy burden on healthcare systems around the world. Caused by Plasmodium parasites and transmitted through the bites of infected female Anopheles mosquitoes, malaria is both preventable and curable, yet it remains a leading cause of illness and death in tropical and subtropical regions.
           <br /><br />
@@ -31,8 +31,7 @@ const ModuleContent = () => {
           This module introduces you to the basic understanding of malaria, its causes, effects, and importance on a global, continental, and national scale. As you move through the course, you will explore malaria's transmission, symptoms, prevention strategies, and the global and local actions aimed at its control and eventual eradication.
               <br /><br />
     <strong>Watch this short video for a visual overview:</strong><br />
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/rm1Y3fS8zxo" title="What is Malaria? | World Malaria Day" frameborder="0" allowfullscreen></iframe>
-        </p>`
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/61333168?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Child health: understanding signs of malaria"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></p>`
       },
       'module-2': {
         title: 'Mode of Transmission - Malaria',

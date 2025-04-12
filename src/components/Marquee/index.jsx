@@ -27,7 +27,7 @@ const MedicalMarquee = () => {
 
   return (
     <div className="w-full overflow-hidden bg-blue-50 p-6 rounded-lg shadow-md">
-      <div className="relative h-[400px] overflow-hidden"> {/* Increased height for better spacing */}
+      <div className="relative h-[400px] overflow-hidden"> 
         <div 
           className="absolute flex gap-4 transition-transform duration-2500 ease-linear"
           style={{ transform: `translateX(${position}px)` }}
@@ -36,7 +36,7 @@ const MedicalMarquee = () => {
             <div 
               key={img.id} 
               className="flex-shrink-0 bg-white rounded-lg overflow-hidden shadow-lg"
-              style={{ width: `${img.width}px`, height: `${img.height}px` }} // Apply custom sizes
+              style={{ width: `${img.width}px`, height: `${img.height}px` }}
             >
               <img 
                 src={img.src} 
@@ -46,7 +46,6 @@ const MedicalMarquee = () => {
             </div>
           ))}
 
-          {/* Duplicate images to create a smooth infinite loop effect */}
           {images.map(img => (
             <div 
               key={`dup-${img.id}`} 

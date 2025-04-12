@@ -89,7 +89,8 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
             </List>
           </Collapse>
           
-          <ListItem
+
+          {/* <ListItem
             button
             component={NavLink}
             to="/dashboard/badges"
@@ -99,8 +100,10 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
               <Award size={24} />
             </ListItemIcon>
             <ListItemText primary="Badges" />
-          </ListItem>
-          <ListItem
+          </ListItem> */}
+
+
+          {/* <ListItem
             button
             component={NavLink}
             to="/dashboard/learning-pathways"
@@ -110,7 +113,9 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
               <BookOpen size={24} />
             </ListItemIcon>
             <ListItemText primary="Learning Pathways" />
-          </ListItem>
+          </ListItem> */}
+
+{/* 
           <ListItem
             button
             component={NavLink}
@@ -121,7 +126,9 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
               <Sun size={24} />
             </ListItemIcon>
             <ListItemText primary="Certificates" />
-          </ListItem>
+          </ListItem> */}
+
+
           {/* Added Profile item to sidebar */}
           <ListItem
             button

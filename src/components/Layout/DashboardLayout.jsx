@@ -62,7 +62,6 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
       <Toolbar />
       <Box sx={{ overflow: 'auto', p: 2 }}>
         <List>
-          {/* Courses with dropdown */}
           <ListItem 
             button 
             onClick={toggleCourses}
@@ -74,7 +73,7 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
             {coursesOpen ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
           </ListItem>
           
-          {/* Collapsible course menu */}
+
           <Collapse in={coursesOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               {courses.map((course) => (
@@ -122,7 +121,6 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
             </ListItemIcon>
             <ListItemText primary="Certificates" />
           </ListItem>
-          {/* Added Profile item to sidebar */}
           <ListItem
             button
             component={NavLink}

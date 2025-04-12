@@ -14,9 +14,11 @@ const AppHeader = () => {
     }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Dashboard
+          Maverick-eLearning
         </Typography>
-        <Button 
+
+
+        {/* <Button 
           color="inherit" 
           sx={{ mx: 1 }}
           component={NavLink}
@@ -24,18 +26,24 @@ const AppHeader = () => {
         >
           Courses
         </Button>
+
+
         <Button 
           color="inherit" 
           sx={{ mx: 1 }}
         >
           Exercises
         </Button>
+
+
         <Button 
           color="inherit" 
           sx={{ mx: 1 }}
         >
           My Learning
         </Button>
+
+
         <Button 
           color="inherit" 
           sx={{ mx: 1 }}
@@ -43,7 +51,9 @@ const AppHeader = () => {
           to="/dashboard/certificates"
         >
           Certificates
-        </Button>
+        </Button> */}
+
+
         <IconButton color="inherit" sx={{ position: 'relative' }}>
           <Bell size={20} />
           <Box sx={{ 
@@ -66,7 +76,7 @@ const AppHeader = () => {
         <Button 
           color="inherit" 
           startIcon={<User size={20} />}
-          sx={{ mx: 1 }}
+          sx={{ mx: 1, '&:hover': { color: 'white' } }}
           component={NavLink}
           to="/dashboard/profile"
         >

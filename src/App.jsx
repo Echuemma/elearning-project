@@ -1,8 +1,13 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import { BrowserRouter } from "react-router-dom";
 import BaseRouter from "./routes";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./App.css";
 
 function App() {
@@ -13,6 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <BaseRouter />
+      <ToastContainer/>
     </BrowserRouter>
   );
 }

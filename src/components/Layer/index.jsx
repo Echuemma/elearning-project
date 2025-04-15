@@ -14,10 +14,6 @@ const Layer = () => {
     }, []);
   return (
     <div className="course bg-[#1B5C12] rounded-lg w-[90%] mx-auto my-[50px] relative pb-[100px]">
-      {/* Dark green curved shape in background */}
-      {/* <div className=" container absolute right-0 top-0 w-3/4 h-full rounded-md  bg-green-900 rounded-l-full rounded-r"></div> */}
-      
-      {/* Main content area */}
       <div className="relative p-8 rounded-md ">
         <div className="text-white max-w-md px-4 py-2">
           <h3 className=" healthtext text-2xl font-bold mb-2" data-aos="fade-down"
@@ -46,7 +42,7 @@ const Layer = () => {
             </svg>
           </div>
           <h2 className=" cardtext font-bold text-base mb-2 ml-10">Register / Sign Up</h2>
-          <p className=" cardtext text-xs text-gray-600 px-20">
+          <p className=" cardtext text-xs text-gray-600">
             Get started on our platform by signing up on our web application. Gain access to a variety of health education courses and resources designed to help you grow.
           </p>
         </div>

@@ -5,7 +5,7 @@ import NavBar from '../../components/NavBar';
 import Banner from '../../components/Banner';
 import Marquee from '../../components/Marquee';
 import Counter from '../../components/Counter';
-// import HealthEducationHero from '../../components/HealthEducationHero';
+ import HealthEducationHero from '../../components/HealthEducationHero';
 import OnlineCoursesSection from '../../components/OnlineCoursesSection';
 import Layer from '../../components/Layer';
 import Testimonial from '../../components/Testimonial';
@@ -25,15 +25,7 @@ function Home() {
 
   return (
     <div>
-      <NavBar navLinks={navLinks} />
-      <Banner />
-      <Marquee />
-      {/* <HealthEducationHero /> */}
-      <OnlineCoursesSection />
-      <Layer />
-      <Counter />
-      <Testimonial />
-      <Footer />
+
     </div>
   );
 }

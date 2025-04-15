@@ -18,14 +18,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="nav bg-white border-b border-gray-200 px-6 py-4">
+    <div className='px-5 bg-white'>
+      <nav className="nav bg-white border-b border-gray-200 py-4 px-5">
       <div className="flex items-center justify-between">
 
         <div className="font-medium text-green-800">Logo</div>
         
         <div className="hidden md:flex items-center gap-6">
   <a href="/" className="!text-[#1B5C12] font-medium border-b-2 border-green-800">Home</a>
-  <a href="/dashboard" className="text-gray-500 hover:text-[#1B5C12]">Dashboard</a>
+  <a href="" className="text-gray-500 hover:text-[#1B5C12]">About Us</a>
   <a href="/courses" className="text-gray-500 hover:text-[#1B5C12]">Courses</a>
   <a href="/teach" className="text-gray-500 hover:text-[#1B5C12]">Teach On Maverick</a>
 </div>
@@ -38,7 +39,7 @@ const Navbar = () => {
           </Link>
           
           
-          <Link to="./register">
+          <Link to="./signup">
           <Button text="Sign up" />
           </Link>
         </div>
@@ -99,6 +100,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    </div>
   );
 };
 

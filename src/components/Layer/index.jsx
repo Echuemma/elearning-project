@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import "./style.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,9 +28,12 @@ const Layer = () => {
         
         <div className="absolute top-8 right-8" data-aos="fade-up"
         data-aos-delay="200">
+
+        <Link to="/login">
           <button className="bg-white text-green-800 px-4 py-2 rounded-md font-medium text-sm">
             Get Started
           </button>
+          </Link>
         </div>
       </div>
       

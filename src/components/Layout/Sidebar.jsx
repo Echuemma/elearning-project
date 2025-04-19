@@ -115,7 +115,7 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
             <ListItemText primary="Learning Pathways" />
           </ListItem> */}
 
-{/* 
+
           <ListItem
             button
             component={NavLink}
@@ -126,7 +126,7 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
               <Sun size={24} />
             </ListItemIcon>
             <ListItemText primary="Certificates" />
-          </ListItem> */}
+          </ListItem>
 
 
           {/* Added Profile item to sidebar */}

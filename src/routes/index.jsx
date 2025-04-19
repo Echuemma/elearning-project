@@ -5,6 +5,7 @@ import DashboardLayout from '../pages/DashboardLayout';
 import FpasswordPage from '../pages/FpasswordPage';
 import LoginPage from '../pages/LoginPage';
 import RegistrationPage from '../pages/RegistrationPage';
+import CertificatePage from '../pages/CertificatePage';
 import DashboardHome from '../pages/DashboardHome';
 import Malaria from '../pages/Malaria';
 import ProfilePage from '../pages/ProfilePage';
@@ -50,7 +51,8 @@ const BaseRouter = () => {
         
         <Route path="badges" element={<div>Badges Content</div>} />
         <Route path="learning-pathways" element={<div>Learning Pathways Content</div>} />
-        <Route path="certificates" element={<div>Certificates Content</div>} />
+        {/* <Route path="certificates" element={<div>Certificates Content</div>} /> */}
+        <Route path="certificates" element={<CertificatePage/>} />
         <Route path="profile" element={<ProfilePage />} />
       </Route>
     </Routes>

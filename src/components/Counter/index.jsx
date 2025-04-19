@@ -96,9 +96,9 @@ export default function StatsCounter() {
         <p className="text-gray-300 px-4" data-aos="fade-up">
           Free online courses. In-person learning. Certification-aligned pathways in topics like Health, Nutrition, Preventive Medicine.
         </p>
-        <button className="bg-white text-green-800 px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition" data-aos="fade-up" data-aos-delay="200">
+        {/* <button className="bg-white text-green-800 px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition" data-aos="fade-up" data-aos-delay="200">
           Get Started
-        </button>
+        </button> */}
 
         <div className="flex flex-wrap justify-center gap-[35px] mt-6">
           {stats.map((stat, index) => (

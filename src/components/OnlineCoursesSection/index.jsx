@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./style.css";
@@ -88,9 +89,11 @@ const OnlineCoursesSection = () => {
       </div>
 
       <div className="text-center mt-8">
+        <Link to="/login">
         <button className="btn bg-[#1B5C12] hover:bg-[#246e44] text-white font-medium py-2 px-6 rounded-md transition-colors" data-aos="fade-up">
           View Other Free Courses
         </button>
+        </Link>
       </div>
     </div>
   );

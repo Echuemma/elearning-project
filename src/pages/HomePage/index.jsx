@@ -20,18 +20,31 @@ function Home() {
   return (
     <div>
       <NavBar/>  
-    <Banner/>
-    <Marquee/>
-     <HealthEducationHero/> 
-    <OnlineCoursesSection/>
-    <Layer/>
-    <Counter/>
-    <Testimonial/>
-    <Footer/>
-
+      <div id="home">
+        <Banner/>
+      </div>
+      <div id="marquee">
+        <Marquee/>
+      </div>
+      <div id="education">
+        <HealthEducationHero/> 
+      </div>
+      <div id="courses">
+        <OnlineCoursesSection/>
+      </div>
+      <div id="layer">
+        <Layer/>
+      </div>
+      <div id="counter">
+        <Counter/>
+      </div>
+      <div id="testimonials">
+        <Testimonial/>
+      </div>
+      <div id="footer">
+        <Footer/>
+      </div>
     </div>
-
-
   );
 }
 

@@ -8,7 +8,6 @@ import "./nav.css"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -17,30 +16,73 @@ const Navbar = () => {
     });
   }, []);
 
+  // Function to handle smooth scrolling
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    // Close mobile menu after clicking
+    setIsOpen(false);
+  };
+
   return (
-    <div className='px-5 bg-white'>
+    <div className='px-5 bg-white sticky top-0 z-50'>
       <nav className="nav bg-white border-b border-gray-200 py-4 px-5">
       <div className="flex items-center justify-between">
 
         <div className="font-medium text-green-800">Logo</div>
         
         <div className="hidden md:flex items-center gap-6">
-  <a href="/" className="!text-[#1B5C12] font-medium border-b-2 border-green-800">Home</a>
-  <a href="" className="text-gray-500 hover:text-[#1B5C12]">About Us</a>
-  <a href="/courses" className="text-gray-500 hover:text-[#1B5C12]">Courses</a>
-  <a href="/teach" className="text-gray-500 hover:text-[#1B5C12]">Teach On Maverick</a>
-</div>
+          <a 
+            href="#home" 
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('home');
+            }}
+            className="!text-[#1B5C12] font-medium border-b-2 border-green-800"
+          >
+            Home
+          </a>
+          <a 
+            href="#education" 
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('education');
+            }}
+            className="text-gray-500 hover:text-[#1B5C12]"
+          >
+            About Us
+          </a>
+          <a 
+            href="#courses" 
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('courses');
+            }}
+            className="text-gray-500 hover:text-[#1B5C12]"
+          >
+            Courses
+          </a>
+          <a 
+            href="#testimonials" 
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('testimonials');
+            }}
+            className="text-gray-500 hover:text-[#1B5C12]"
+          >
+            Testimonials
+          </a>
+        </div>
 
-
-        <div className=" nav_btn hidden md:flex items-center space-x-4">
-          
+        <div className="nav_btn hidden md:flex items-center space-x-4">
           <Link to="./login">
-          <Button text="Login" />
+            <Button text="Login" />
           </Link>
           
-          
           <Link to="./signup">
-          <Button text="Sign up" />
+            <Button text="Sign up" />
           </Link>
         </div>
 
@@ -60,7 +102,11 @@ const Navbar = () => {
         <div className="mt-4 md:hidden overflow-hidden">
           <div className="flex flex-col items-start space-y-4 pl-2">
             <a 
-              href="/" 
+              href="#home" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('home');
+              }}
               className="text-green-800 font-medium border-b-2 border-green-800 w-full"
               data-aos="fade-right" 
               data-aos-delay="100"
@@ -68,15 +114,23 @@ const Navbar = () => {
               Home
             </a>
             <a 
-              href="/dashboard" 
+              href="#education" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('education');
+              }}
               className="text-gray-500 hover:text-gray-700 w-full"
               data-aos="fade-right" 
               data-aos-delay="150"
             >
-              Dashboard
+              About Us
             </a>
             <a 
-              href="/courses" 
+              href="#courses" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('courses');
+              }}
               className="text-gray-500 hover:text-gray-700 w-full"
               data-aos="fade-right" 
               data-aos-delay="200"
@@ -84,12 +138,16 @@ const Navbar = () => {
               Courses
             </a>
             <a 
-              href="/teach" 
+              href="#testimonials" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('testimonials');
+              }}
               className="text-gray-500 hover:text-gray-700 w-full"
               data-aos="fade-right" 
               data-aos-delay="250"
             >
-              Teach On Maverick
+              Testimonials
             </a>
 
             <div className="flex flex-col space-y-2 w-full" data-aos="fade-right" data-aos-delay="300">

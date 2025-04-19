@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Typography, Paper, Container, Button, Box, Table, TableBody, TableCell, TableHead, TableRow, Card, CardMedia, CardContent, CardActions, Chip, CircularProgress } from '@mui/material';
 import { auth, db } from '../../components/Firebase'; 
 import { doc, getDoc } from 'firebase/firestore';
@@ -6,6 +7,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import SA from "../../assets/images/SA.jpeg";
 import tb from "../../assets/images/tb.jpeg";
 import malaria from "../../assets/images/malaria.jpeg";
+// import { Link } from 'lucide-react';
 
 const DashboardHome = () => {
   const [user, setUser] = useState(null);
@@ -84,7 +86,7 @@ const DashboardHome = () => {
           Dive into our engaging courses, expand your knowledge, and take control of your health.
           every lesson brings you closer to making informed decisions. Click below to continue learning today!
         </Typography>
-        <Button 
+        {/* <Button 
           variant="contained" 
           sx={{ 
             backgroundColor: '#2e7d32', 
@@ -92,7 +94,7 @@ const DashboardHome = () => {
           }}
         >
           Start Learning
-        </Button>
+        </Button> */}
       </Paper>
 
       {/* Last Viewed and Certificates Section - Side by Side */}
@@ -120,7 +122,7 @@ const DashboardHome = () => {
           </Box>
           <Box sx={{ display: 'flex', gap: 2, mt: 3 }}>
             {/* <Button variant="outlined" size="small">Go to My Learning</Button> */}
-            <Button 
+            {/* <Button 
               variant="contained" 
               size="small"
               sx={{ 
@@ -129,7 +131,7 @@ const DashboardHome = () => {
               }}
             >
               Resume Learning
-            </Button>
+            </Button> */}
           </Box>
         </Paper>
 
@@ -141,7 +143,10 @@ const DashboardHome = () => {
           <Typography paragraph sx={{ mt: 2 }}>
             You have no certificates yet. Once you earn them, they will appear here.
           </Typography>
-          <Button variant="outlined" size="small">View Badges</Button>
+
+          <Link to="/dashboard/certificates">
+          <Button variant="outlined" size="small">View Certificate</Button>
+          </Link>
         </Paper>
       </Box>
 

@@ -21,13 +21,13 @@ const Footer = () => {
       Register with us and enjoy a holistic health checkup and easy access to 
       specialised providers and clinics.
     </p>
-    <button className="bg-white text-[#1B5C12] hover:bg-gray-100 font-medium py-2 px-6 rounded-md transition duration-300 mx-auto block" data-aos="fade-up">
+    {/* <button className="bg-white text-[#1B5C12] hover:bg-gray-100 font-medium py-2 px-6 rounded-md transition duration-300 mx-auto block" data-aos="fade-up">
       Get Started
-    </button>
+    </button> */}
   </div>
 </div>
       
-      <div className=" divider border-t border-green-700 my-8"></div>
+      <div className=" divider border-t border-green-700 my-3"></div>
       
       <div className=" second_div flex flex-col md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0">
@@ -38,26 +38,6 @@ const Footer = () => {
             <a href="/contact" className="hover:text-gray-300 transition duration-300">Contact Us</a>
           </div>
         </div>
-        
-        {/* <div className="text-right">
-          <p className="mb-3">Get the app</p>
-          <div className="space-y-2 sm:space-y-0 sm:space-x-2">
-            <a href="#" className="inline-block">
-              <img 
-                src="/api/placeholder/140/48" 
-                alt="App Store" 
-                className="h-12 w-auto rounded-md"
-              />
-            </a>
-            <a href="#" className="inline-block">
-              <img 
-                src="/api/placeholder/140/48" 
-                alt="Google Play" 
-                className="h-12 w-auto rounded-md"
-              />
-            </a>
-          </div>
-        </div> */}
       </div>
       
       
